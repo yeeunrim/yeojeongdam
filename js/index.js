@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* 메인이미지 슬라이드 */
 $(document).ready(function() {
-  var images = ['/images/main_image01.png', '/images/main_image02.png', '/images/main_image03.png'];
+  var images = ['images/main_image01.png', 'images/main_image02.png', 'images/main_image03.png'];
   var currentIndex = 0;
   var imageInterval;
 
