@@ -1,0 +1,34 @@
+section.service{
+  margin-bottom: 10%;
+}
+
+.service-title {
+  margin-right: 18%;
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+.service-member{
+  margin-left: 40%;
+  margin-top: 80px;
+}
+
+.service-member h3{
+   font-size: 30px;
+}
+
+.service-member h2{
+   margin-top: 40px;
+   font-size: 20px;
+}
+
+.service-member p{
+  width: 50%; 
+  color: rgb(114, 110, 110);
+  padding: 10px 0;
+}
+
+.board h1{
+  margin-top: 50px;
+  margin-left: 150px;
+}

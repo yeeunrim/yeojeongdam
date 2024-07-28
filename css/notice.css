@@ -1,0 +1,183 @@
+/* 멤버쉽*/
+section.membership{
+  width: 100%;
+}
+.membership #membership_container{
+	width: 100%;
+    margin: 120px 1% 20% 1%;
+}
+#membership_container h1{
+	padding: 0 0 1% 8%;
+}
+
+.membership-title {
+  font-size: 25px;
+}
+
+.membership .board{
+	width: 100%;
+}
+
+.membership-member,.membership-nonmember{
+  margin-top: 80px;
+  margin-left: 32%;
+}
+
+.membership-member p, .membership-nonmember p{
+  text-decoration: none;
+  display: inline-block; /* inline-block으로 설정하여 width, height, padding, margin 속성 적용 가능 */
+  width: 50%; 
+  border-bottom: 1px solid black;
+  color: rgb(114, 110, 110);
+  padding: 10px 0;
+}
+
+/* 자주하는 질문*/
+
+section .question{
+  width: 100%;
+}
+#question_container{
+	width: 100%;
+    margin: 120px 1% 10% 1%
+}
+
+.question-title {
+  font-size: 25px;
+}
+
+#question_container .board{
+  width: 100%;
+}
+#question_container h1{
+  padding: 0 0 1% 8%;
+}
+
+.fao-user,.fao-travel,.fao-other{
+    margin-top: 80px;
+    margin-left: 32%;
+}
+
+.fao-section1 label,.fao-section2 label,.fao-section3 label{
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    color: rgb(114, 110, 110);
+}
+
+.menubars { 
+  display: none; 
+  color: rgb(114, 110, 110);
+}
+
+/* 체크되면 메뉴를 표시하기 */
+#check-btn1:checked ~ .menubars,
+#check-btn2:checked ~ .menubars,
+#check-btn3:checked ~ .menubars,
+#check-btn4:checked ~ .menubars,
+#check-btn5:checked ~ .menubars,
+#check-btn6:checked ~ .menubars,
+#check-btn7:checked ~ .menubars,
+#check-btn8:checked ~ .menubars,
+#check-btn9:checked ~ .menubars { 
+  display: block; 
+}
+
+/* 체크박스는 화면에서 감추기 */
+#check-btn1, #check-btn2, #check-btn3, 
+#check-btn4, #check-btn5, #check-btn6, 
+#check-btn7, #check-btn8, #check-btn9
+ { 
+  display: none; 
+}
+
+/* 개인정보 처리방침*/
+section.data{
+  margin-bottom: 10%;
+}
+
+.data-title {
+  margin-right: 18%;
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+
+
+.data-board{
+  margin-left: 30%;
+  margin-top: 80px;
+}
+
+
+.data-board p{
+  text-decoration: none;
+  display: inline-block; /* inline-block으로 설정하여 width, height, padding, margin 속성 적용 가능 */
+  width: 80%; 
+  padding: 10px 0;
+}
+
+/* 이용약관*/
+use.data{
+  padding: 200px 0;
+  width: 100%;
+}
+
+.use-title {
+  margin-right: 18%;
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+.use-board{
+  margin-left: 30%;
+  margin-top: 80px;
+  margin-bottom: 10%;
+}
+
+
+.use-board p{
+  text-decoration: none;
+  display: inline-block; /* inline-block으로 설정하여 width, height, padding, margin 속성 적용 가능 */
+  width: 80%; 
+  padding: 10px 0;
+}
+
+/* 고객센터 */
+
+section.service{
+  margin-bottom: 10%;
+}
+
+.service-title {
+  margin-right: 18%;
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+.service-member{
+  margin-left: 40%;
+  margin-top: 80px;
+}
+
+.service-member h3{
+   font-size: 30px;
+}
+
+.service-member h2{
+   margin-top: 40px;
+   font-size: 20px;
+}
+
+.service-member p{
+  width: 50%; 
+  color: rgb(114, 110, 110);
+  padding: 10px 0;
+}
+
+.board h1{
+  margin-top: 50px;
+  margin-left: 150px;
+}

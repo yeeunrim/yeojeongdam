@@ -1,0 +1,140 @@
+#mmm{margin: 200px auto 110px auto;}
+.my_container{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 마이페이지 */
+.my_container .profile, .select, .box, .more{
+
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
+.my_container .profile, #box1{
+  background-color: #eee;
+  border-radius: 10px;
+}
+.my_container .select, .more {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;;
+}
+.my_container .box{
+  padding-left: 0;
+  padding-right: 0;
+}
+.my_container #box1{
+  width: 100%;
+  height: 150px;
+  background-color: #eee;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+.my_container #box1 .con{ padding: 10px; height: 80px;}
+
+.my_container .profile {
+	
+  height: 400px;
+  display: flex; /* flex container로 만듦 */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; /* 세로 중앙 정렬 */
+  position: relative; /* 부모 기준으로 자식 요소를 배치하기 위해 필요 */
+
+}
+
+.my_container .profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.my_container .profile button {
+  border: none;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.my_container .profile #modify{
+  position: absolute; /* 절대 위치로 설정 */
+  top: 20px;
+  right: 50px;
+  border-right: solid 0.5px #eee;
+}
+.my_container .profile #modify2{
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+}
+.my_container .profile #my_an{  
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px; /* 이미지 우측 여백 설정 */
+  margin-right: 100px;
+}
+.my_container .select{margin-top: 20px; padding: 15px;}
+.my_container .select a, .box .like a {
+  text-decoration: none;
+  color: #333;
+  border-right: 1.5px solid #ccc; 
+  padding: 0 30px;
+}
+.my_container .select a:last-child , .box .like a:last-child {
+  border: none;
+}
+.my_container .select a:active{font-weight: 900;}
+.my_container .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.my_container .box > div {
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 20px; /* 각 박스 사이의 간격 조절 */
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 850px) {
+  .my_container .box > div {
+    flex: 0 0 calc(100% - 0px); /* 4행 1열로 변경 */
+  }
+  .my_container #tt .box2 {
+    flex: 0 0 calc(100% - 0px); /* 4행 1열로 변경 */
+  }
+  .my_container #wish, #more2{width: 100%;}
+  .my_container .modal-content {
+    width: 80%;
+  }
+  .my_container .profile {
+    height: 400px;
+    flex-direction: column; /* 세로 배치로 변경 */
+    align-items: center; /* 가운데 정렬 */
+  }
+
+  .my_container .profile #my_an {
+    width: 80%;
+    margin: 0 0 30px 0;
+  }
+}
+/* 데스크탑 */
+@media screen and (min-width: 1440px) {
+	.my_container{
+		width: 1100px;
+	}
+}
+@media screen and (min-width: 850px) {
+	.my_container .profile img{
+		width: 300px;
+		height: 300px;
+	}
+}

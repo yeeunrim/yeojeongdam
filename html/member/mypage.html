@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yeojeongdam</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/mypage.css">
+  <script src="https://kit.fontawesome.com/630c352365.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div id="welcome">
+        <p>All travel information can be found in the YeoJeongDam !</p>
+      </div>
+      <nav>
+        <div id="topMenu">
+          <div id="mainMenu">
+            <ul>
+              <li><a href="/index.html">홈</a></li>
+              <li>
+                <a href="#">여행지</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/travel/domesticMain.html">국내</a></li>
+                    <li><a href="/html/travel/overseasMain.html">해외</a></li>
+                    <li><a href="/html/travel/hotelTraffic.html">숙소 / 교통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/board/travelReview.html">여행 후기</a></li>
+                    <li><a href="/html/board/travelInformation.html">정보 공유</a></li>
+                    <li><a href="/html/board/travelWith.html">동행자 찾기</a></li>
+                    <li><a href="/html/board/travelNotice.html">공지사항</a></li>
+                    <li><a href="/html/board/travelPlan.html">나의 계획</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">여정담</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/about/about.html">여정담 정보</a></li>
+                    <li><a href="/html/about/ccc.html">고객센터</a></li>
+                    <li><a href="/html/about/membership.html">멤버쉽</a></li>
+                    <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="sideMenuIcon">
+            <i class="fa fa-bars"></i>
+          </div>
+
+          <div id="sideMenu">
+            <ul id="sideMenu_1">
+              <li><a href="/html/member/loginForm.html">로그인</a></li>
+              <li><a href="/html/member/joinForm01.html">회원가입</a></li>
+              <li><a href="#"><i class="fa-solid fa-earth-americas"></i>&nbsp;South Korea</a></li>
+            </ul>
+            <ul id="sideMenu_2">
+              <li><a href="/html/member/mypage.html">마이페이지</a></li>
+              <li><a href="/html/member/wishList.html">찜한 목록</a></li>
+              <li><a href="#">English</a></li> <!-- 스크롤로 언어(영어/한국) 선택 -->
+            </ul>
+          </div>
+        </div>
+
+        <div id="bottomMenu">
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 내용 -->
+  <div id=mmm>
+    <section class="my_container">
+      <div class="profile">
+        <img src="../../images/page.png" alt="프로필사진">
+        <div id="my_an">
+          <h3>나의 프로필</h3>
+          <p><br>닉네임 : 옌무새</p>
+          <p><br>안녕하세요. 여정담 예시 페이지입니다.</p>
+        </div>
+        <button id="modify" onclick="openModal()"><i class="fa-solid fa-pen"></i></button>
+        <button id="modify2"><a href="/setting.do"><i class="fa-solid fa-gear"></i></a></button>
+      </div>
+      <div class="select">
+        <a href="#" class="toggle-link">내 게시물 </a>
+        <a href="#" class="toggle-link">내 댓글 </a>
+        <a href="../../html/member/wishList.html" class="toggle-link">찜 </a>
+      </div>
+      <div class="box">
+        <div id="box1">
+          <div class="title"><a href="">제목</a></div>
+          <div class="con">글내용</div>
+          <div class="like">
+            <a href=""> 찜 0 </a>
+            <a href=""> 댓글 0 </a>
+          </div>
+        </div>
+        <div id="box1">
+          <div class="title"><a href="">제목</a></div>
+          <div class="con">글내용</div>
+          <div class="like">
+            <a href=""> 찜 0 </a>
+            <a href=""> 댓글 0 </a>
+          </div>
+        </div>
+        <div id="box1">
+          <div class="title"><a href="">제목</a></div>
+          <div class="con">글내용</div>
+          <div class="like">
+            <a href=""> 찜 0 </a>
+            <a href=""> 댓글 0 </a>
+          </div>
+        </div>
+        <div id="box1">
+          <div class="title"><a href="">제목</a></div>
+          <div class="con">글내용</div>
+          <div class="like">
+            <a href=""> 찜 0 </a>
+            <a href=""> 댓글 0 </a>
+          </div>
+        </div>
+      </div>
+      <div class="more">
+          <a href="">+ MORE</a>
+      </div>
+    </section>
+    </div>
+  
+  <!-- 푸터 -->
+  <footer>
+    <ul id= footerMenu_left>
+      <li><a href="/html/about/privacyPolicy.html">개인정보 처리방침</a></li>
+      <li><a href="/html/about/tos.html">이용약관</a></li>
+      <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+      <li><a href="/html/about/ccc.html">고객센터</a></li>
+    </ul>
+
+    <p>여정담</p>
+	
+    <ul id= footerMenu_right>
+      <li><a href="">인스타그램</a></li>
+      <li><a href="/html/about/about.html">© 여정담 2023.website by여정담</a></li>
+    </ul>
+  </footer>
+
+  <script src="../../js/index.js"></script>
+</body>
+</html>

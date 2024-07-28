@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yeojeongdam</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/notice.css">
+  <script src="https://kit.fontawesome.com/630c352365.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div id="welcome">
+        <p>All travel information can be found in the YeoJeongDam !</p>
+      </div>
+      <nav>
+        <div id="topMenu">
+          <div id="mainMenu">
+            <ul>
+              <li><a href="/index.html">홈</a></li>
+              <li>
+                <a href="#">여행지</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/travel/domesticMain.html">국내</a></li>
+                    <li><a href="/html/travel/overseasMain.html">해외</a></li>
+                    <li><a href="/html/travel/hotelTraffic.html">숙소 / 교통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/domesticMain.html">여행 후기</a></li>
+                    <li><a href="/html/overseasMain.html">정보 공유</a></li>
+                    <li><a href="/html/hotelTraffic.html">동행자 찾기</a></li>
+                    <li><a href="/html/hotelTraffic.html">공지사항</a></li>
+                    <li><a href="/html/hotelTraffic.html">나의 계획</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">여정담</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/about/about.html">여정담 정보</a></li>
+                    <li><a href="/html/about/ccc.html">고객센터</a></li>
+                    <li><a href="/html/about/membership.html">멤버쉽</a></li>
+                    <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="sideMenuIcon">
+            <i class="fa fa-bars"></i>
+          </div>
+
+          <div id="sideMenu">
+            <ul id="sideMenu_1">
+              <li><a href="/html/member/loginForm.html">로그인</a></li>
+              <li><a href="/html/member/joinForm01.html">회원가입</a></li>
+              <li><a href="#"><i class="fa-solid fa-earth-americas"></i>&nbsp;South Korea</a></li>
+            </ul>
+            <ul id="sideMenu_2">
+              <li><a href="/html/member/mypage.html">마이페이지</a></li>
+              <li><a href="/html/member/wishList.html">찜한 목록</a></li>
+              <li><a href="#">English</a></li> <!-- 스크롤로 언어(영어/한국) 선택 -->
+            </ul>
+          </div>
+        </div>
+
+        <div id="bottomMenu">
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 내용 -->
+  <section class="question">
+		<div id="question_container">
+      <div class="question-title">
+          <div class="board">
+              <h1>자주하는 질문</h1>
+          </div>
+      </div>
+      <div class="fao-travel">
+          <h3>여행</h3>
+          <div class="fao-section1">
+              <div class="fao-menu1">
+                  <input id="check-btn1" type="checkbox" />
+                  <label for="check-btn1">해외여행 중 여권 분실 시 대처</label>
+                  <ul class="menubars">
+                      <li>여권 분실 시 순서로는<br>   1. 여권 분실 신고<br>
+                      2. 현지 관광 경찰서 방문 - 분실 확인증 발급<br>
+                      3. 현지 한국 대사관 방문으로 이뤄지며<br>
+                      발급을 위해 신분증, 여권용 사진 2매, <br>
+                      여권 발급시 수수료등이 필요합니다.</li>
+                  </ul>
+              </div>
+              <div class="fao-menu2">
+                  <input id="check-btn2" type="checkbox" />
+                  <label for="check-btn2">해외여행 주의사항</label>
+                  <ul class="menubars">
+                      <li>각 나라별 비자, 입국심사 등을 확인해 즐거운 여행이 되시길 기원합니다.</li>
+                  </ul>
+              </div>
+              <div class="fao-menu3">
+                  <input id="check-btn3" type="checkbox" />
+                  <label for="check-btn3">국내여행 주의사항</label>
+                  <ul class="menubars">
+                      <li>여행 중에 비상 상황에 대비하여 긴급 연락처와 응급처치를 위한 기본적인 의료용품을 <br>
+                        지참하시고, 여행 보험 가입 여부를 확인하며, 필요하다면 가입하세요.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="fao-user">
+          <h3>회원</h3>
+          <div class="fao-section2">
+              <div class="fao-menu4">
+                  <input id="check-btn4" type="checkbox" />
+                  <label for="check-btn4">회원 탈퇴를 하고 싶습니다.</label>
+                  <ul class="menubars">
+                      <li>[마이페이지>회원정보 수정>회원탈퇴] <br>메뉴에서 탈퇴를 선택하시고 
+                          확인 버튼을 클릭하시면 탈퇴가 가능합니다.<br>
+                          정보통신망법(정보통신망 이용촉진 및 정보보호 등에 관한 법률 제 29조)에<br> 
+                          따라서, 수집목적이 완료된 회원의 정보는 파기하도록 되어 있습니다.</li>
+                  </ul>
+              </div>
+              <div class="fao-menu5">
+                  <input id="check-btn5" type="checkbox" />
+                  <label for="check-btn5">내가 쓴 글을 수정,삭제하고싶어요.</label>
+                  <ul class="menubars">
+                      <li>로그인 후, [마이페이지] ->내가 쓴 글을 확인할 수 있으며, <br>
+                          클릭하여 해당 글이 있는 페이지로 이동하시면 글 내용 하단에 <br>
+                          삭제/수정 기능이 있습니다.</li>
+                  </ul>
+              </div>
+              <div class="fao-menu6">
+                  <input id="check-btn6" type="checkbox" />
+                  <label for="check-btn6">아이디/비밀번호가 기억나지 않아요.</label>
+                  <ul class="menubars">
+                      <li>여정담 아이디 및 비밀번호 찾기는 로그인 페이지에서 <br>
+                          [아이디/비밀번호 찾기]를 통해 가능합니다.<br>
+                          [아이디/비밀번호 찾기] 통해 아이디 및 비밀번호 찾기를 진행해 주시기 바랍니다.</li>
+                  </ul>
+              </div>
+          </div> 
+      </div>
+      <div class="fao-other">
+          <h3>기타 문의사항</h3>
+          <div class="fao-section3">
+          <div class="fao-menu7">
+              <input id="check-btn7" type="checkbox" />
+              <label for="check-btn7">여정담은 언제 만들어졌나요?</label>
+              <ul class="menubars">
+                  <li>2023년 12월 15일 탄생했습니다.</li>
+              </ul>
+          </div>
+          <div class="fao-menu8">
+              <input id="check-btn8" type="checkbox" />
+              <label for="check-btn8">여정담의 목표가 무엇인가요?</label>
+              <ul class="menubars">
+                  <li> 저희 여정담의 목표는<br>
+                      전 세계 여행 정보 제공 및 공유 사이트입니다.</li>
+              </ul>
+          </div>
+          <div class="fao-menu9">
+              <input id="check-btn9" type="checkbox" />
+              <label for="check-btn9">여정담은 누가 만든건가요?</label>
+              <ul class="menubars">
+                  <li>팀원 : 임예은(PL), 박채희, 서지훈, 이가은, 이나경, 이상현입니다.</li>
+              </ul>
+          </div>
+      </div> 
+      </div>
+    </div> 
+   </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <ul id= footerMenu_left>
+      <li><a href="/html/about/privacyPolicy.html">개인정보 처리방침</a></li>
+      <li><a href="/html/about/tos.html">이용약관</a></li>
+      <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+      <li><a href="/html/about/ccc.html">고객센터</a></li>
+    </ul>
+
+    <p>여정담</p>
+	
+    <ul id= footerMenu_right>
+      <li><a href="">인스타그램</a></li>
+      <li><a href="/html/about/about.html">© 여정담 2023.website by여정담</a></li>
+    </ul>
+  </footer>
+
+  <script src="../../js/index.js"></script>
+</body>
+</html>

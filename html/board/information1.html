@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yeojeongdam</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/board.css">
+  <script src="https://kit.fontawesome.com/630c352365.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div id="welcome">
+        <p>All travel information can be found in the YeoJeongDam !</p>
+      </div>
+      <nav>
+        <div id="topMenu">
+          <div id="mainMenu">
+            <ul>
+              <li><a href="/index.html">홈</a></li>
+              <li>
+                <a href="#">여행지</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/travel/domesticMain.html">국내</a></li>
+                    <li><a href="/html/travel/overseasMain.html">해외</a></li>
+                    <li><a href="/html/travel/hotelTraffic.html">숙소 / 교통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/board/travelReview.html">여행 후기</a></li>
+                    <li><a href="/html/board/travelInformation.html">정보 공유</a></li>
+                    <li><a href="/html/board/travelWith.html">동행자 찾기</a></li>
+                    <li><a href="/html/board/travelNotice.html">공지사항</a></li>
+                    <li><a href="/html/board/travelPlan.html">나의 계획</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">여정담</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/about/about.html">여정담 정보</a></li>
+                    <li><a href="/html/about/ccc.html">고객센터</a></li>
+                    <li><a href="/html/about/membership.html">멤버쉽</a></li>
+                    <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="sideMenuIcon">
+            <i class="fa fa-bars"></i>
+          </div>
+
+          <div id="sideMenu">
+            <ul id="sideMenu_1">
+              <li><a href="/html/member/loginForm.html">로그인</a></li>
+              <li><a href="/html/member/joinForm01.html">회원가입</a></li>
+              <li><a href="#"><i class="fa-solid fa-earth-americas"></i>&nbsp;South Korea</a></li>
+            </ul>
+            <ul id="sideMenu_2">
+              <li><a href="/html/member/mypage.html">마이페이지</a></li>
+              <li><a href="/html/member/wishList.html">찜한 목록</a></li>
+              <li><a href="#">English</a></li> <!-- 스크롤로 언어(영어/한국) 선택 -->
+            </ul>
+          </div>
+        </div>
+
+        <div id="bottomMenu">
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 내용 -->
+  <section class="notice">
+    <div class="mainBoard">
+   <div class="board-title">
+          <div class="board1">
+              <h3>나의 계획</h3>
+              <p>게시판에 맞는 정보를 공유해주세요.</p>
+          </div>
+      </div>
+
+      <div class = "boardViewForm">
+        <div class="btitle">
+          파리 지하철 꿀팁 전해드립니다!
+        </div>
+        <div class="upper">
+          <div class="thumb">
+          <i class="fa-regular fa-user" style="color: #ffffff; font-size : 30px;"></i>
+          </div>
+          <div class="nickname1">
+            게스트1
+          </div>
+          <div class ="update">
+            2023.12.11
+          </div>
+          <div class="etc">
+            댓글 : 1 개
+          </div>
+        </div>
+        <hr>
+        <div class = "content">
+          <div>
+            <img src="../../images/dog.PNG" class="boardviewimage">
+          </div>
+          저희 집 개인데 개 보면서 다들 행복하세요 !<br>
+          파리 지하철은 에어컨이 없어서 여름에는 많이 더워요 ㅠㅠ<br>
+          그래서 한국에서 꼭 휴대용 선풍기 들고 가세요 !!
+        </div>
+        <div class = "right">
+        첨부파일: dog.PNG<a>&nbsp;[다운로드]</a>
+       </div>
+        <div class = "under">
+          <div class="likeReply">
+            <div id="likeSection">
+              <div id="likeCount">
+                <i class="fa-regular fa-heart" style="color: #ff0000; font-size: 20px;"></i>
+                좋아요: 3 개
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="crud">
+          <p>
+            <a href="../../html/board/travelInformation.html"><button type="button" class="writebtn">목록</button></a>
+            <a href=""
+              onclick="return confirm('정말로 삭제하시겠습니까?')">
+            <button type="button" class="writebtn">삭제</button></a>
+            <a href=""><button type="button" class="writebtn">수정</button></a>
+         </p>
+        </div>
+        <div class="replyform">
+        <p class="rtitle">댓글</p>
+          <div class = "reply">
+            <div class = "reThumb">
+            <i class="fa-regular fa-user" style="color: #ffffff; font-size : 15px;"></i>
+            </div>
+            <div class = "replyer">
+                게스트5
+                <div class="recrud">
+                  <a href=""
+                      onclick="return confirm('댓글을 삭제하시겠습니까?')">
+                  <button type="button" id=DR><i class="fa-solid fa-trash-can"></i></button></a>
+                  <a href="">
+                  <button type="button" id=DR><i class="fa-solid fa-pen"></i></button></a>
+              </div>
+            </div>
+            <div class = "rcontent">
+              너무 좋은 꿀팁이네요 ! 감사합니당
+            </div>
+            <div class = "rdate">
+              2023.12.12 12:04:23
+            </div>
+          </div>
+          </c:forEach>
+          <div class="replyWrite">
+            <p>
+              <textarea name="rcontent" class="wrcontent"
+                placeholder="댓글 작성란"></textarea>
+            </p>
+            <button type="button" class="writebtn">등록</button>
+          </div>	
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <ul id= footerMenu_left>
+      <li><a href="/html/about/privacyPolicy.html">개인정보 처리방침</a></li>
+      <li><a href="/html/about/tos.html">이용약관</a></li>
+      <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+      <li><a href="/html/about/ccc.html">고객센터</a></li>
+    </ul>
+
+    <p>여정담</p>
+	
+    <ul id= footerMenu_right>
+      <li><a href="">인스타그램</a></li>
+      <li><a href="/html/about/about.html">© 여정담 2023.website by여정담</a></li>
+    </ul>
+  </footer>
+
+  <script src="../../js/index.js"></script>
+</body>
+</html>

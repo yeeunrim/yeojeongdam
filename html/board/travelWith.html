@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yeojeongdam</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/board.css">
+  <script src="https://kit.fontawesome.com/630c352365.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div id="header">
+      <div id="welcome">
+        <p>All travel information can be found in the YeoJeongDam !</p>
+      </div>
+      <nav>
+        <div id="topMenu">
+          <div id="mainMenu">
+            <ul>
+              <li><a href="/index.html">홈</a></li>
+              <li>
+                <a href="#">여행지</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/travel/domesticMain.html">국내</a></li>
+                    <li><a href="/html/travel/overseasMain.html">해외</a></li>
+                    <li><a href="/html/travel/hotelTraffic.html">숙소 / 교통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">커뮤니티</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/board/travelReview.html">여행 후기</a></li>
+                    <li><a href="/html/board/travelInformation.html">정보 공유</a></li>
+                    <li><a href="/html/board/travelWith.html">동행자 찾기</a></li>
+                    <li><a href="/html/board/travelNotice.html">공지사항</a></li>
+                    <li><a href="/html/board/travelPlan.html">나의 계획</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">여정담</a>
+                <div class="test">
+                  <ul>
+                    <li><a href="/html/about/about.html">여정담 정보</a></li>
+                    <li><a href="/html/about/ccc.html">고객센터</a></li>
+                    <li><a href="/html/about/membership.html">멤버쉽</a></li>
+                    <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="sideMenuIcon">
+            <i class="fa fa-bars"></i>
+          </div>
+
+          <div id="sideMenu">
+            <ul id="sideMenu_1">
+              <li><a href="/html/member/loginForm.html">로그인</a></li>
+              <li><a href="/html/member/joinForm01.html">회원가입</a></li>
+              <li><a href="#"><i class="fa-solid fa-earth-americas"></i>&nbsp;South Korea</a></li>
+            </ul>
+            <ul id="sideMenu_2">
+              <li><a href="/html/member/mypage.html">마이페이지</a></li>
+              <li><a href="/html/member/wishList.html">찜한 목록</a></li>
+              <li><a href="#">English</a></li> <!-- 스크롤로 언어(영어/한국) 선택 -->
+            </ul>
+          </div>
+        </div>
+
+        <div id="bottomMenu">
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 내용 -->
+  <section class="notice" id="notice">
+    <div class="board-title">
+      <div class="board">
+        <h3>동행자 찾기</h3>
+        <p>게시판에 맞는 정보를 공유해주세요.</p>
+      </div>
+    </div>
+    <!-- board list area -->
+    <div id="board-list">
+      <div class="board">
+        <table class="board-table">
+          <thead>
+            <tr>
+              <th class="th-num">번호</th>
+              <th class="th-title">제목</th>
+              <th class="th-id">작성자</th>
+              <th class="th-date">작성일</th>
+              <th class="th-hit">조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="medal1">
+              <td><i class="fa-solid fa-medal" style="color: #ffd500;"></i></td>
+              <td><a href="../../html/board/crew1.html">스페인 - 바르셀로나 여행자 1명 (여) 구합니다!</a></td>
+              <td>게스트1</td>
+              <td>2023.12.11</td>
+              <td>1204</td>
+            </tr>
+            <tr class="medal2">
+              <td><i class="fa-solid fa-medal" style="color: #dedede;"></i></td>
+              <td><a href="../../html/board/crew1.html">12/5 ~ 12/7 부분 동행 구해요.</a></td>
+              <td>게스트2</td>
+              <td>2023.10.18</td>
+              <td>939</td>
+            </tr>
+            <tr class="medal3">
+              <td><i class="fa-solid fa-medal" style="color: #a85a00;"></i></td>
+              <td><a href="../../html/board/crew1.html">축구 좋아하시는 분, 같이 직관하러 갑시다.</a></td>
+              <td>게스트3</td>
+              <td>2022.01.18</td>
+              <td>471</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td><a href="../../html/board/crew1.html">스페인 - 바르셀로나 여행자 1명 (여) 구합니다!</a></td>
+              <td>게스트1</td>
+              <td>2023.12.11</td>
+              <td>1204</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="/boardview.do?bno=${l1.bno }">12/5 ~ 12/7 부분 동행 구해요.</a></td>
+              <td>게스트3</td>
+              <td>2022.01.18</td>
+              <td>471</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="../../html/board/crew1.html">축구 좋아하시는 분, 같이 직관하러 갑시다.</a></td>
+              <td>게스트2</td>
+              <td>2023.10.18</td>
+              <td>939</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- 검색 -->
+    <div class="search-container">
+        <div class="input-wrapper">
+            <select name="field" id="search-select">
+                <option value="title">제목</option>
+          <option value="content">내용</option>
+          <option value="id">작성자</option>
+            </select>
+            <input type="text" id="search-input" placeholder="검색어를 입력하세요." name="kw" size="30%">
+          <button type="submit" id="search-button">검색</button>
+        </div>
+        <a href="../../html/board/writeWith.html"><input type="button" value="글쓰기" id="write"></a>
+    </div>
+  </section>
+  
+  <!-- 푸터 -->
+  <footer>
+    <ul id= footerMenu_left>
+      <li><a href="/html/about/privacyPolicy.html">개인정보 처리방침</a></li>
+      <li><a href="/html/about/tos.html">이용약관</a></li>
+      <li><a href="/html/about/faq.html">자주하는 질문</a></li>
+      <li><a href="/html/about/ccc.html">고객센터</a></li>
+    </ul>
+
+    <p>여정담</p>
+	
+    <ul id= footerMenu_right>
+      <li><a href="">인스타그램</a></li>
+      <li><a href="/html/about/about.html">© 여정담 2023.website by여정담</a></li>
+    </ul>
+  </footer>
+
+  <script src="../../js/index.js"></script>
+</body>
+</html>
